@@ -1,32 +1,111 @@
-.App {
+body {
+  padding: 50px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+header {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header img {
+      max-width: 120px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
+ {
+      margin-bottom: 0;
+}
+
+.content .table td,th {
+          vertical-align: middle
+      }
+
+.mRight {
+          margin-right: 20px;
+      }
+
+.message {
+  text-align: center;
+}
+
+.message:only-child {
+      margin: 0;
+  }
+
+.btn-sm {
+  margin-right: 8px;
+}
+
+.form-inline {
+  margin: 10px auto;
+  width: 235px;
+}
+
+.btn-default {
+      margin-left: 5px;
+  }
+
+.credits {
+  text-align: center;
+  padding: 70px;
+  opacity: .5;
+  transition: opacity 0.3s linear;}
+  
+  .credits:hover {
+      opacity: 1;
+  }
+
+  a {
+      color: #4b4668;
+}
+
+/* Simple show/hide */
+ /* .panel {
+     .panel-body {
+         display: none;
+     }
+     &.is-expanded {
+         .panel-body {
+             display: block;
+         }
+     }
+ } */
+
+/* Simple CSS transition of max-height
+     .panel-collapse {
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.5s cubic-bezier(.525,.66,.495,1.4);  
+     }
+
+     .panel.is-expanded {
+             max-height: 200px
+         }
+
+/* JS calculated height - the most accurate */
+
+  /* .panel-heading {
+      cursor: pointer;
+  }
+
+  .panel-collapse {
+      overflow: hidden;
+      transition: height 0.3s ease-out;  
+  }
+
+  .panel-body {
+      border: none !important;
+  }
+  h2 {margin-top: 5px !important;
+  } */ 

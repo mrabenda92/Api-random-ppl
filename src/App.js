@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import image from './images/expand-vertical-4.png';
+import Collapsible from './components/Collapsible'
 
-class App extends Component {
+class App extends React.Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      return (
+          <div>
+              <header>
+                  <img src={image} />
+                  <h1>Collapsible Content</h1>
+              </header>
+              <div className="content">
+                  <div className="panel-group">
+                  <Collapsible title="Overview">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.</p>
+                  </Collapsible>
+                  <Collapsible title="Features">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.</p>
+                  </Collapsible>
+                  <Collapsible title="Software">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.</p>
+                  </Collapsible>
+                  </div>
+              </div>
+          </div>
+      );
   }
 }
-
 export default App;
